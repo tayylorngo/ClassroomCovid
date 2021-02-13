@@ -5,6 +5,8 @@ import SchoolsList from "./components/SchoolsList/SchoolsList";
 import AboutPage from "./components/AboutPage/AboutPage";
 import AddSchool from "./components/AddSchool/AddSchool";
 import HomePage from "./components/HomePage/HomePage";
+import LoginPage from "./components/LoginPage/LoginPage";
+import EditSchool from "./components/EditSchool/EditSchool";
 
 function App() {
     return (
@@ -25,13 +27,21 @@ function App() {
                         <SchoolsList />
                     </div>
                 }/>
-                <Route path="/addSchool" exact absolute render={() =>
+                <Route path="/addschool" exact absolute render={() =>
                     <div>
                         <AddSchool />
                     </div>
                 }/>
-
-
+                <Route path="/editschools" exact absolute render={() =>
+                    <div>
+                        <EditSchool />
+                    </div>
+                }/>
+                <Route path="/login" exact absolute render={() =>
+                    <div>
+                        <LoginPage />
+                    </div>
+                }/>
             </div>
         </BrowserRouter>
     );

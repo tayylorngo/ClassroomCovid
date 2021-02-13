@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Container, Form, Alert, Button} from 'react-bootstrap';
 import './AddSchool.css';
 import Header from "../Header/Header";
-import firebase from '../../firebase';
+import fire from '../../firebase';
 
 class AddSchool extends Component{
 
@@ -56,7 +56,7 @@ class AddSchool extends Component{
     onSubmit(e){
         e.preventDefault();
 
-        firebase.firestore().collection("schools").add({
+        fire.firestore().collection("schools").add({
             name: this.state.name,
             maskPolicy: this.state.maskPolicy,
             socialDistancingPolicy: this.state.socialDistancing,

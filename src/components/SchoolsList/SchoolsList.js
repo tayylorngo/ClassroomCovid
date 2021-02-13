@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import firebase from '../../firebase';
+import fire from '../../firebase';
 import School from "../School/School";
 import Header from "../Header/Header";
 import './SchoolsList.css';
@@ -11,7 +11,7 @@ class SchoolsList extends Component{
     }
 
     componentDidMount() {
-        firebase.firestore().collection("schools").orderBy("name").get().then(querySnapshot => {
+        fire.firestore().collection("schools").orderBy("name").get().then(querySnapshot => {
             const newSchools = [];
             querySnapshot.forEach(doc => {
                 const data = doc.data();

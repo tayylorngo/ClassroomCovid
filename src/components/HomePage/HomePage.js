@@ -1,14 +1,37 @@
 import React, {Component} from 'react';
 import Header from "../Header/Header";
 import './HomePage.css';
-import {Link} from "react-router-dom";
+import {Link, Route} from "react-router-dom";
+import fire from'../../firebase';
 
 class HomePage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: null
+        };
+        this.authListener = this.authListener.bind(this);
+    }
+
+    componentDidMount() {
+        this.authListener();
+    }
+
+    authListener(){
+        fire.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({ user });
+            } else {
+                this.setState({ user: null });
+            }
+        })
+    }
+
     render() {
         return(
             <div className="homePageDiv">
                 <div id="landing-header">
-                    <Header/>
+                    <Header user={this.state.user}/>
                     <div>
                         <div className="container">
                             <div className="row">
