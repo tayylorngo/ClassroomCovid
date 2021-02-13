@@ -1,0 +1,17 @@
+.addSchoolForm{
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 4%;
+}
+
+.addSchoolTitle{
+    margin-top: 2%;
+}
+
+h5{
+    float: left;
+}
+
+.largeTextInput{
+    width: 100%;
+}

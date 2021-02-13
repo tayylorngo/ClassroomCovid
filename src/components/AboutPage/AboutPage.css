@@ -1,0 +1,31 @@
+.header{
+    margin-top: 1%;
+
+    /*background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");*/
+    background-size: cover ;
+
+    min-width: 101%;
+
+    text-align: center;
+    padding-top: 25%;
+    padding-left: 50%;
+    font-size: 500vh;
+    mso-font-width: 500px;
+    font-family: "Lucida Console";
+    /*min-height: 90vh;*/
+    display: flex;
+    font-size: calc(4px + 2vmin);
+    color: azure;
+
+}
+
+a,a:hover, a:focus, a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active{
+    font-family: "Lucida Console";
+    margin-right: 1%;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Reggae+One&display=swap%27');
+
+body{
+    background: url("https://images.pexels.com/photos/5965520/pexels-photo-5965520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover ;
+    background-position: center;
+    font-family: Oxygen;
+    color:whitesmoke;
+}
+#content{
+    text-align: center;
+    padding-top: 25%;
+
+}
+#homepageButton{
+    background-color: white;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 5em;
+}
+html{
+    height: 100%;
+}
+hr{
+    width: 400px;
+}

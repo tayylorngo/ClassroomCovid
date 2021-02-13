@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
+import SchoolsList from "./components/SchoolsList/SchoolsList";
+import AboutPage from "./components/AboutPage/AboutPage";
+import AddSchool from "./components/AddSchool/AddSchool";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Route path="/" exact absolute render={() =>
+                    <div>
+                        <HomePage />
+                    </div>
+                }/>
+                <Route path="/about" exact absolute render={() =>
+                    <div>
+                        <AboutPage />
+                    </div>
+                }/>
+                <Route path="/schools" exact absolute render={() =>
+                    <div>
+                        <SchoolsList />
+                    </div>
+                }/>
+                <Route path="/addSchool" exact absolute render={() =>
+                    <div>
+                        <AddSchool />
+                    </div>
+                }/>
+
+
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

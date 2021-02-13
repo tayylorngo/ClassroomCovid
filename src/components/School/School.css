@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.schoolCard{
+    margin-bottom: 3%;
+}
+
+.policy{
+    width: 100px;
+}
+.schoolContainer{
+    width: 50%;
+}
+
+#collegeName{
+    font-size: 2rem;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+.infoTable{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
