@@ -69,6 +69,9 @@ class AddSchool extends Component{
         return(
             <div>
                 <Header/>
+                <br/>
+                <br/>
+                <br/>
                 <h1 className="addSchoolTitle">Add School</h1>
                 <Container>
                     <Form className="addSchoolForm" onSubmit={this.onSubmit}>

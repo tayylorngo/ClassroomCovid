@@ -39,6 +39,9 @@ class SchoolsList extends Component{
             <div className="schoolListDiv">
                 <Header/>
                 <br/>
+                <br/>
+                <br/>
+                <br/>
                 <h1 id="title">Total School List</h1>
                 <hr/>
                 <br/>
