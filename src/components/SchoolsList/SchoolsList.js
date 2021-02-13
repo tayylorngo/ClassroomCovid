@@ -11,7 +11,7 @@ class SchoolsList extends Component{
     }
 
     componentDidMount() {
-        firebase.firestore().collection("schools").get().then(querySnapshot => {
+        firebase.firestore().collection("schools").orderBy("name").get().then(querySnapshot => {
             const newSchools = [];
             querySnapshot.forEach(doc => {
                 const data = doc.data();

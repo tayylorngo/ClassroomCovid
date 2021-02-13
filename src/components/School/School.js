@@ -17,23 +17,23 @@ class School extends Component{
                                             <tbody>
                                             <tr>
                                                 <td className="policy">Face Mask Policy</td>
-                                                <td>{this.props.maskPolicy}</td>
+                                                <td className="policyText" align="left">{this.props.maskPolicy}</td>
                                             </tr>
                                             <tr>
                                                 <td>Social Distancing Guidelines</td>
-                                                <td>{this.props.socialDistancingPolicy}</td>
+                                                <td className="policyText" align="left">{this.props.socialDistancingPolicy}</td>
                                             </tr>
                                             <tr>
                                                 <td>Covid-19 Testing Information</td>
-                                                <td>{this.props.covidTestingInfo}</td>
+                                                <td className="policyText" align="left">{this.props.covidTestingInfo}</td>
                                             </tr>
                                             <tr>
                                                 <td>Covid-19 Vaccine Information</td>
-                                                <td>{this.props.vaccineInfo}</td>
+                                                <td className="policyText" align="left">{this.props.vaccineInfo}</td>
                                             </tr>
                                             <tr>
                                                 <td>Travel & Quarantine Information</td>
-                                                <td>{this.props.travelInfo}</td>
+                                                <td className="policyText" align="left">{this.props.travelInfo}</td>
                                             </tr>
                                             </tbody>
                                         </Table>
