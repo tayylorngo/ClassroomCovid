@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 .header{
     margin-top: 1%;
 
@@ -7,15 +10,15 @@
     min-width: 101%;
 
     text-align: center;
-    padding-top: 25%;
-    padding-left: 50%;
-    font-size: 500vh;
+    padding-top: 10%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-size: 3rem;
     mso-font-width: 500px;
-    font-family: "Lucida Console";
+    font-family: "Roboto";
     /*min-height: 90vh;*/
     display: flex;
-    font-size: calc(4px + 2vmin);
-    color: azure;
+    color: black;
 
 }
 
@@ -29,3 +32,29 @@ a,a:hover, a:focus, a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav
     list-style: none;
 }
 
+.aboutUsText{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hackHealth{
+
+}
+
+.main{
+    min-height: 100vh;
+    background: #50C9C3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.quoteCard{
+    background: transparent;
+    border: none;
+    font-family: 'Nova Square', cursive;
+}
+
+
+.quoteSource{
+    color: black;
+}

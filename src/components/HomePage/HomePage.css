@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Reggae+One&display=swap%27');
 
 body{
-    background: url("https://images.pexels.com/photos/5965520/pexels-photo-5965520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover ;
-    background-position: center;
-    font-family: Oxygen;
-    color:whitesmoke;
 }
 #content{
     text-align: center;
     padding-top: 25%;
+    color: white;
+}
 
+.homePageDiv{
+    background-size: 100%;
+    font-family: Oxygen, serif;
+    background: url("https://images.pexels.com/photos/5965520/pexels-photo-5965520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920") no-repeat center;
+    min-height: 100vh;
 }
 #homepageButton{
     background-color: white;
+}
+
+#homepageButton:hover{
+    color: black;
 }
 
 h1{
@@ -26,3 +32,4 @@ html{
 hr{
     width: 400px;
 }
+

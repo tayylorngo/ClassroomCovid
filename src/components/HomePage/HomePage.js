@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from "../Header/Header";
 import './HomePage.css';
+import {Link} from "react-router-dom";
 
 class HomePage extends Component {
     render() {
@@ -16,11 +17,11 @@ class HomePage extends Component {
                                     <h1>Classroom Covid</h1>
                                     <h3>The university database for Covid-19 protocols</h3>
                                     <hr></hr>
-
-                                    <button className="btn btn-default btn-lg" id = "homepageButton"><i aria-hidden="true"></i>
-                                        View Schools
+                                    <Link to="/schools">
+                                        <button className="btn btn-default btn-lg" id = "homepageButton"><i aria-hidden="true"></i>
+                                            View Schools
                                         </button>
-
+                                    </Link>
                                 </div>
                             </div>
                         </div>

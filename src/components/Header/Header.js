@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, Form, FormControl, Button} from "react-bootstrap";
+import {Navbar, Nav} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import './Header.css';
 
 class Header extends Component {
     render() {
         return(
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">Hackathon</Navbar.Brand>
+                    <Navbar.Brand href="/">Classroom Covid</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="/schools">Schools</Nav.Link>
-                            <Nav.Link href="#About">About</Nav.Link>
-                            <Nav.Link href="#Contact">Contact</Nav.Link>
+                            <Link to="/schools" className="navLink">Schools List</Link>
+                            <Link to="/about" className="navLink">About Us</Link>
+                            <Link to="/addschool" className="navLink">Add School</Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="#Login">Login</Nav.Link>

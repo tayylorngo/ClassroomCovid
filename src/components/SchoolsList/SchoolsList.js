@@ -36,7 +36,7 @@ class SchoolsList extends Component{
                     />)
             );
         return (
-            <div>
+            <div className="schoolListDiv">
                 <Header/>
                 <br/>
                 <h1 id="title">Total School List</h1>

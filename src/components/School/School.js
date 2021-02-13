@@ -13,7 +13,6 @@ class School extends Component{
                             <Card className="text-center schoolCard">
                                 <Card.Body>
                                     <Card.Title id="collegeName">{this.props.name}</Card.Title>
-                                    <Card.Text>
                                         <Table bordered hover className="infoTable">
                                             <tbody>
                                             <tr>
@@ -38,7 +37,6 @@ class School extends Component{
                                             </tr>
                                             </tbody>
                                         </Table>
-                                    </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>

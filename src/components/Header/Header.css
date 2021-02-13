@@ -1,0 +1,7 @@
+.navLink{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    margin-right: 1%;
+    display: block;
+    color: rgba(255,255,255,.5);
+}
