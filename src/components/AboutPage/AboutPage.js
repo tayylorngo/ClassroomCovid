@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from "../Header/Header";
 import {Container, Row, Col, Card} from 'react-bootstrap';
+import { FaGithub, FaHospitalSymbol } from "react-icons/fa";
 
 import './AboutPage.css';
 
@@ -109,8 +110,8 @@ class AboutPage extends Component {
                     <Col>
                         <div className="list-group">
                             {/*<a href="#" className="list-group-item list-group-item-action text-center disabled">More info</a>*/}
-                            <a href="https://github.com/tayylorngo/ClassroomCovid" className="list-group-item list-group-item-action text-center someLinks">Source Code</a>
-                            <a href="https://www3.cs.stonybrook.edu/~wics/hackhealth/" className="list-group-item list-group-item-action text-center">HackHealth 2021</a>
+                            <a href="https://github.com/tayylorngo/ClassroomCovid" className="list-group-item list-group-item-action text-center someLinks">Source Code <FaGithub/></a>
+                            <a href="https://www3.cs.stonybrook.edu/~wics/hackhealth/" className="list-group-item list-group-item-action text-center">HackHealth 2021 <FaHospitalSymbol/></a>
                         </div>
 
                     </Col>

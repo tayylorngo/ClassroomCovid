@@ -6,6 +6,7 @@
 
 .addSchoolTitle{
     margin-top: 2%;
+    font-size: 3rem;
 }
 
 h5{
@@ -14,4 +15,13 @@ h5{
 
 .largeTextInput{
     width: 100%;
+}
+
+#submittedAlert{
+    width: 100%;
+    align-items: center;
+}
+
+#alertClose{
+    margin-top: .5%;
 }

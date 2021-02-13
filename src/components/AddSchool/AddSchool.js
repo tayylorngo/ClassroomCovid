@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Button, Form} from 'react-bootstrap';
+import {Container, Form, Alert, Button} from 'react-bootstrap';
 import './AddSchool.css';
 import Header from "../Header/Header";
 import firebase from '../../firebase';
@@ -24,7 +24,8 @@ class AddSchool extends Component{
             socialDistancing: '',
             vaccineInfo: '',
             travelInfo: '',
-            testingInfo: ''
+            testingInfo: '',
+            alertVisible: false
         }
     }
 
@@ -63,6 +64,8 @@ class AddSchool extends Component{
             travelInfo: this.state.travelInfo,
             covidTestingInfo: this.state.testingInfo,
         });
+
+        this.setState({alertVisible: true});
     }
 
     render() {
@@ -72,6 +75,18 @@ class AddSchool extends Component{
                 <br/>
                 <br/>
                 <br/>
+                <br/>
+                        <Alert
+                            show={this.state.alertVisible}
+                            id="submittedAlert"
+                            variant="success"
+                            onClick={() => {this.setState({alertVisible: false})}}>
+                            Successfully added {this.state.name} to the database!
+                            <br/>
+                            {' '}<Button id="alertClose" size="sm" onClick={() => {this.setState({alertVisible: false})}} variant="outline-danger">
+                                X
+                            </Button>
+                        </Alert>
                 <h1 className="addSchoolTitle">Add School</h1>
                 <Container>
                     <Form className="addSchoolForm" onSubmit={this.onSubmit}>
